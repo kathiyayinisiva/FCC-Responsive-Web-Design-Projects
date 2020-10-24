@@ -1,0 +1,81 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- Responsive Web Design Project #2 - Building a Survey Form -->
+<main id="main">
+<header class="header">
+  <h1 id="title">
+    2021 Voters Survey Form
+  </h1>
+  <p id="description"> Understanding the voting capacities of the public for the upcoming general elections 2021, given the COVID-19 pandemic situation </p>
+</header>
+
+<form id="survey-form">
+  
+  <div id="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name="name" id="name" class="form-element" placeholder="Enter your name" required />
+  </div>
+  
+  <div id="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" id="email" class="form-element" placeholder="Enter your email ID" required />
+  </div>
+  
+  <div id="form-group">
+    <label id="number-label" for="number">Age (optional)</label>
+    <input type="number" name="age" id="number" class="form-element" placeholder="Age" min="18" max="99" />
+  </div>
+  
+  <div class="form-group">
+    <p id="question">Are you voting for the first time?</p>
+    <label>
+        <input name="first-timer" value="yes" type="radio" class="input-radio" checked />
+      Yes </label>
+    <label>
+        <input name="first-timer" value="no" type="radio" class="input-radio" />
+        No </label>
+  </div>
+  
+  <div class="form-group">
+    <p id="question">What is your voter's ID status?</p>
+    <select id="dropdown" name="status"class="form-element" required>
+      <option disabled selected value>Select </option>
+        <option value="not applied">Not applied</option>
+        <option value="applied">Applied, not yet recieved</option>
+        <option value="recieved">Applied, recieved</option>
+      <option value="lost">Applied, but lost the voter's ID</option>
+        <option value="error">Error with application</option>
+      </select>
+    </div>
+  
+  <div class="form-group">
+      <p id="question">
+        What modes of voting would you prefer? (Check all that apply)
+    </>
+      <label> 
+        <input name="prefer" value="online-portal" type="checkbox" class="input-checkbox" /> Online portal 
+    </label>
+      <label>
+        <input name="prefer" value="traditional" type="checkbox" class="input-checkbox" /> Traditional in-person voting 
+    </label>
+    <label>
+        <input name="prefer" value="non-contact" type="checkbox" class="input-checkbox" /> Non-contact in-person voting 
+    </label>
+      <label>
+        <input name="prefer" value="mobile" type="checkbox" class="input-checkbox" /> Mobile door-to-door voting 
+    </label>
+    </div>
+  
+      <div class="form-group">
+      <p id="question">Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comments and suggestions"></textarea>
+    </div>
+  
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  
+  </form>
+</main>
